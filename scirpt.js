@@ -1,5 +1,18 @@
 console.log("lets write java script!")
 
+let songs = [
+    "songs/song1.mp3",
+    "songs/song2.mp3"
+  ];
+  
+  let audio = new Audio();
+  
+  function playSong(index) {
+    audio.src = songs[index];
+    audio.play();
+  }
+
+
 let currentsong = new Audio();
 function formatTime(seconds) {
     let mins = Math.floor(seconds / 60);

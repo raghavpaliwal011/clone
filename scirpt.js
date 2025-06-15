@@ -123,7 +123,8 @@ console.log("lets write java script!")
 
 let songs = [
     "songs/song1.mp3",
-    "songs/song2.mp3"
+    "songs/song2.mp3",
+    "songs/song3.mp3"
 ];
 
 let audio = new Audio();
@@ -142,8 +143,6 @@ function formatTime(seconds) {
     if (secs < 10) secs = "0" + secs;
     return `${mins}:${secs}`;
 }
-
-// 🔴 Remove getsongs() function — not needed, local servers don’t exist on GitHub Pages
 
 const playmusic = (track, pause = false) => {
     currentsong.src = track;
